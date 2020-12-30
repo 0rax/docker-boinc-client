@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  boinc-client:
+    container_name: boinc-client
+    image: ghcr.io/0rax/boinc-client
+    environment:
+      TZ: Etc/UTC
+    restart: always
+    ports:
+      - 31416:31416/tcp
+    volumes:
+      - ./boincdata:/var/lib/boinc
+    networks:
+      - boinc
+
+networks:
+  boinc:
+
+volumes:
+  boincdata: {}

@@ -1,0 +1,49 @@
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: boinc-client
+  namespace: boinc
+spec:
+  serviceName: boinc-client
+  replicas: 1
+  selector:
+    matchLabels:
+      app: boinc-client
+  template:
+    metadata:
+      labels:
+        app: boinc-client
+    spec:
+      containers:
+        - name: boinc-client
+          image: ghcr.io/0rax/boinc-client
+          imagePullPolicy: Always
+          env:
+          - name: BOINC_GUI_RPC_PASSWORD
+            value: "CHANGE ME !"
+          - name: BOINC_CMD_LINE_OPTIONS
+            value: "--allow_remote_gui_rpc"
+          volumeMounts:
+            - mountPath: /var/lib/boinc
+              name: boincdata
+          ports:
+          - containerPort: 31416
+            name: manager
+            protocol: TCP
+            hostPort: 31416
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "1000m"
+            limits:
+              memory: "512Mi"
+              cpu: "3200m"
+  volumeClaimTemplates:
+  - metadata:
+      name: boincdata
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      resources:
+        requests:
+          storage: 1Gi

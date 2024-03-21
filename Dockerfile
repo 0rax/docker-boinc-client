@@ -1,11 +1,11 @@
-# Ubuntu Focal Fossa 20.04 LTS
+# Ubuntu Jammy Jellyfish 22.04 LTS
 ARG BUILDARCH=amd64
-FROM $BUILDARCH/ubuntu:20.04
+FROM $BUILDARCH/ubuntu:22.04
 
 # Build arguments
 ARG BUILDARCH
-ARG BOINCPKGVER=7.16.6+dfsg-1
-ARG BOINCVERSION=v7.16.6
+ARG BOINCPKGVER=7.18.1+dfsg-4
+ARG BOINCVERSION=v7.18.1
 
 # OCI labels
 LABEL org.opencontainers.image.title="BOINC client for $BUILDARCH"

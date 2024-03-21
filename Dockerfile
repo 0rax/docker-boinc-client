@@ -1,11 +1,11 @@
-# Ubuntu Jammy Jellyfish 22.04 LTS
+# Ubuntu Mantic Minotaur 23.10
 ARG BUILDARCH=amd64
-FROM $BUILDARCH/ubuntu:22.04
+FROM $BUILDARCH/ubuntu:23.10
 
 # Build arguments
 ARG BUILDARCH
-ARG BOINCPKGVER=7.18.1+dfsg-4
-ARG BOINCVERSION=v7.18.1
+ARG BOINCPKGVER=7.20.5+dfsg-1.1
+ARG BOINCVERSION=v7.20.5
 
 # OCI labels
 LABEL org.opencontainers.image.title="BOINC client for $BUILDARCH"

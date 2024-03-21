@@ -78,6 +78,12 @@ Platforms: linux/amd64, linux/arm64, linux/riscv64, linux/ppc64le, linux/s390x, 
 
 What's important here is that the `linux/amd64`, `linux/arm64` and `linux/arm/v7` platforms are listed.
 
+If you are missing some platform out of the box, using [`tonistiigi/binfmt`](https://github.com/tonistiigi/binfmt) can be used to install the required emulators by running:
+
+```sh
+docker run --privileged --rm tonistiigi/binfmt --install arm,arm64
+```
+
 ### Building an image
 
 A script is available (see [`build.sh`](build.sh)) at the root of this repository to help release any new version of the image for all plateform, though if you want to build one image manually you can do so using one the following commands, depending on your target architecture.

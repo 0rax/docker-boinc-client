@@ -31,7 +31,7 @@ This image being largely inspired by the official [BOINC/boinc-client-docker](ht
 | Parameter                | Default     | Function                                                                                                                                                          |
 | :----------------------- | :---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `BOINC_GUI_RPC_PASSWORD` | `boinc`     | The password what you need to use, when you connect to the BOINC client.                                                                                          |
-| `BOINC_CMD_LINE_OPTIONS` | n/a          | Allow custom command line options to be passed to `/usr/bin/boinc`, adding `--allow_remote_gui_rpc` will allow all remote client to connect to your BOINC client. |
+| `BOINC_CMD_LINE_OPTIONS` | n/a         | Allow custom command line options to be passed to `/usr/bin/boinc`, adding `--allow_remote_gui_rpc` will allow all remote client to connect to your BOINC client. |
 | `BOINC_REMOTE_HOST`      | `127.0.0.1` | (Optional) Replace the `IP` with your IP address. In this case you can connect to the client only from this IP.                                                   |
 | `TZ`                     | `Etc/UTC`   | (Optional) Specify a time zone. The default is UTC +0.                                                                                                            |
 
@@ -45,12 +45,12 @@ To expose the RPC interface of the running BOINC CLIENT, you should expose port 
 
 ## Available tags
 
-| Image                                                                                              | Tags                         | Architecture                  | Note                                       |
-| :------------------------------------------------------------------------------------------------- | :--------------------------- | :---------------------------- | :----------------------------------------- |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/package/boinc-client) |  `v7.16.6`, `latest`          | `amd64`, `arm32v7`, `arm64v8` | Multi arch image running Boinc v7.16.6     |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/312755)  |  `v7.16.6-amd64`, `amd64`     | `amd64`                       | `amd64` image running Boinc v7.16.6        |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/312761)  | `v7.16.6-arm32v7`, `arm32v7` | `arm32v7`                     | `arm32v7` image running Boinc v7.16.6 |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/312766)  | `v7.16.6-arm64v8`, `arm64v8` | `arm64v8`                     | `arm64v8` image running Boinc v7.16.6 |
+| Image                                                                                                                    | Tags                         | Architecture                  | Note                                   |
+| :----------------------------------------------------------------------------------------------------------------------- | :--------------------------- | :---------------------------- | :------------------------------------- |
+| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193959868?tag=v7.20.5)         | `v7.20.5`, `latest`          | `amd64`, `arm32v7`, `arm64v8` | Multi arch image running Boinc v7.20.5 |
+| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193955937?tag=v7.20.5-amd64)   | `v7.20.5-amd64`, `amd64`     | `amd64`                       | `amd64` image running Boinc v7.20.5    |
+| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193957256?tag=v7.20.5-arm32v7) | `v7.20.5-arm32v7`, `arm32v7` | `arm32v7`                     | `arm32v7` image running Boinc v7.20.5  |
+| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193959476?tag=v7.20.5-arm64v8) | `v7.20.5-arm64v8`, `arm64v8` | `arm64v8`                     | `arm64v8` image running Boinc v7.20.5  |
 
 A complete list of all current and past version can be seen in the [Github Packages page for this image](https://github.com/users/0rax/packages/container/package/boinc-client).
 

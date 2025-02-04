@@ -45,12 +45,17 @@ To expose the RPC interface of the running BOINC CLIENT, you should expose port 
 
 ## Available tags
 
-| Image                                                                                                                    | Tags                         | Architecture                  | Note                                   |
-| :----------------------------------------------------------------------------------------------------------------------- | :--------------------------- | :---------------------------- | :------------------------------------- |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193959868?tag=v7.20.5)         | `v7.20.5`, `latest`          | `amd64`, `arm32v7`, `arm64v8` | Multi arch image running Boinc v7.20.5 |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193955937?tag=v7.20.5-amd64)   | `v7.20.5-amd64`, `amd64`     | `amd64`                       | `amd64` image running Boinc v7.20.5    |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193957256?tag=v7.20.5-arm32v7) | `v7.20.5-arm32v7`, `arm32v7` | `arm32v7`                     | `arm32v7` image running Boinc v7.20.5  |
-| [ghcr.io/0rax/boinc-client](https://github.com/users/0rax/packages/container/boinc-client/193959476?tag=v7.20.5-arm64v8) | `v7.20.5-arm64v8`, `arm64v8` | `arm64v8`                     | `arm64v8` image running Boinc v7.20.5  |
+| Image                                            | Tags                         | Architecture                  | Note                                   |
+| :----------------------------------------------- | :--------------------------- | :---------------------------- | :------------------------------------- |
+| [ghcr.io/0rax/boinc-client][tag:v7.24.1]         | `v7.24.1`, `latest`          | `amd64`, `arm32v7`, `arm64v8` | Multi arch image running BOINC v7.24.1 |
+| [ghcr.io/0rax/boinc-client][tag:v7.24.1-amd64]   | `v7.24.1-amd64`, `amd64`     | `amd64`                       | `amd64` image running BOINC v7.24.1    |
+| [ghcr.io/0rax/boinc-client][tag:v7.24.1-arm32v7] | `v7.24.1-arm32v7`, `arm32v7` | `arm32v7`                     | `arm32v7` image running BOINC v7.24.1  |
+| [ghcr.io/0rax/boinc-client][tag:v7.24.1-arm64v8] | `v7.24.1-arm64v8`, `arm64v8` | `arm64v8`                     | `arm64v8` image running BOINC v7.24.1  |
+
+[tag:v7.24.1]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348864248?tag=v7.24.1
+[tag:v7.24.1-amd64]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348849343?tag=v7.24.1-amd64
+[tag:v7.24.1-arm32v7]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348854748?tag=v7.24.1-arm32v7
+[tag:v7.24.1-arm64v8]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348863715?tag=v7.24.1-arm64v8
 
 A complete list of all current and past version can be seen in the [Github Packages page for this image](https://github.com/users/0rax/packages/container/package/boinc-client).
 

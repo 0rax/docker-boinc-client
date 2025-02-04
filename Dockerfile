@@ -1,11 +1,11 @@
-# Ubuntu Mantic Minotaur 23.10
+# Ubuntu 24.04 LTS
 ARG BUILDARCH=amd64
-FROM $BUILDARCH/ubuntu:23.10
+FROM $BUILDARCH/ubuntu:24.04
 
 # Build arguments
 ARG BUILDARCH
-ARG BOINCPKGVER=7.20.5+dfsg-1.1
-ARG BOINCVERSION=v7.20.5
+ARG BOINCPKGVER=7.24.1+dfsg-4build1
+ARG BOINCVERSION=v7.24.1
 
 # OCI labels
 LABEL org.opencontainers.image.title="BOINC client for $BUILDARCH"

@@ -47,17 +47,17 @@ To expose the RPC interface of the running BOINC CLIENT, you should expose port 
 
 | Image                                            | Tags                         | Architecture                  | Note                                   |
 | :----------------------------------------------- | :--------------------------- | :---------------------------- | :------------------------------------- |
-| [ghcr.io/0rax/boinc-client][tag:v7.24.1]         | `v7.24.1`, `latest`          | `amd64`, `arm32v7`, `arm64v8` | Multi arch image running BOINC v7.24.1 |
-| [ghcr.io/0rax/boinc-client][tag:v7.24.1-amd64]   | `v7.24.1-amd64`, `amd64`     | `amd64`                       | `amd64` image running BOINC v7.24.1    |
-| [ghcr.io/0rax/boinc-client][tag:v7.24.1-arm32v7] | `v7.24.1-arm32v7`, `arm32v7` | `arm32v7`                     | `arm32v7` image running BOINC v7.24.1  |
-| [ghcr.io/0rax/boinc-client][tag:v7.24.1-arm64v8] | `v7.24.1-arm64v8`, `arm64v8` | `arm64v8`                     | `arm64v8` image running BOINC v7.24.1  |
+| [ghcr.io/0rax/boinc-client][tag:v8.0.4]         | `v8.0.4`, `latest`          | `amd64`, `arm32v7`, `arm64v8` | Multi arch image running BOINC v8.0.4 |
+| [ghcr.io/0rax/boinc-client][tag:v8.0.4-amd64]   | `v8.0.4-amd64`, `amd64`     | `amd64`                       | `amd64` image running BOINC v8.0.4    |
+| [ghcr.io/0rax/boinc-client][tag:v8.0.4-arm32v7] | `v8.0.4-arm32v7`, `arm32v7` | `arm32v7`                     | `arm32v7` image running BOINC v8.0.4  |
+| [ghcr.io/0rax/boinc-client][tag:v8.0.4-arm64v8] | `v8.0.4-arm64v8`, `arm64v8` | `arm64v8`                     | `arm64v8` image running BOINC v8.0.4  |
 
-[tag:v7.24.1]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348864248?tag=v7.24.1
-[tag:v7.24.1-amd64]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348849343?tag=v7.24.1-amd64
-[tag:v7.24.1-arm32v7]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348854748?tag=v7.24.1-arm32v7
-[tag:v7.24.1-arm64v8]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348863715?tag=v7.24.1-arm64v8
+[tag:v8.0.4]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348883648?tag=v8.0.4
+[tag:v8.0.4-amd64]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348871777?tag=v8.0.4-amd64
+[tag:v8.0.4-arm32v7]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348874866?tag=v8.0.4-arm32v7
+[tag:v8.0.4-arm64v8]: https://github.com/0rax/docker-boinc-client/pkgs/container/boinc-client/348883211?tag=v8.0.4-arm64v8
 
-A complete list of all current and past version can be seen in the [Github Packages page for this image](https://github.com/users/0rax/packages/container/package/boinc-client).
+A complete list of all current and past version can be seen in the [GitHub Packages page for this image](https://github.com/users/0rax/packages/container/package/boinc-client).
 
 ## Build
 
@@ -116,4 +116,4 @@ docker buildx build --platform "linux/arm64" \
 
 ## License
 
-docker-boinc-client is LGPLv3 licensed. See [LICENSE](LICENSE).
+`docker-boinc-client` is LGPLv3 licensed. See [LICENSE](LICENSE).

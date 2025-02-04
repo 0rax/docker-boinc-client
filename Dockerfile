@@ -1,11 +1,11 @@
-# Ubuntu 24.04 LTS
+# Ubuntu 24.10
 ARG BUILDARCH=amd64
-FROM $BUILDARCH/ubuntu:24.04
+FROM $BUILDARCH/ubuntu:24.10
 
 # Build arguments
 ARG BUILDARCH
-ARG BOINCPKGVER=7.24.1+dfsg-4build1
-ARG BOINCVERSION=v7.24.1
+ARG BOINCPKGVER=8.0.4+dfsg-1
+ARG BOINCVERSION=v8.0.4
 
 # OCI labels
 LABEL org.opencontainers.image.title="BOINC client for $BUILDARCH"

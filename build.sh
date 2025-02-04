@@ -2,7 +2,7 @@
 set -euo pipefail
 
 IMAGE_NAME=ghcr.io/0rax/boinc-client
-BOINC_PKGVER="7.24.1+dfsg-4build1"
+BOINC_PKGVER="8.0.4+dfsg-1"
 BOINC_VERSION="v${BOINC_PKGVER%+*}"
 
 BUILD_CONFIG=(
